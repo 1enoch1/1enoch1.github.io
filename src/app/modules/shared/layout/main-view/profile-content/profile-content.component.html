@@ -1,0 +1,78 @@
+<!--profile page content component -->
+<!-- <div class="progress-spinner" *ngIf="true">
+
+</div> -->
+<div class="page-container">
+    <div class="eo_parallax">
+        <div class="eo_parallax_group">
+            <div class="eo_parallax_layer  eo_parallax__layer--back">
+                <div class="profile-view-image"></div>
+            </div>
+            <div class="eo_parallax_layer  eo_parallax__layer--base">
+                <div class="profile-header">
+                    <div class="main-view-content">
+                        <div class="eo-profile-image"><a href="#"><img src="assets/images/newpic2.png" alt="Image"
+                                    height="165" width="165" /></a>
+                        </div>
+                        <div class="main-view-title">
+                            <h2>Enoch Offiah</h2>
+                            <p>Web Developer / Software Developer</p>
+                        </div>
+                        <div class="main-button-container">
+                            <div class="action-button-container">
+                                <button pButton type="btn btn-primary" label="Hire Me"
+                                    icon="pi pi-fw pi-thumbs-up"></button>
+                                <button pButton type="btn btn-primary" label="Download CV" icon="pi pi-fw pi-download"
+                                    style="margin-left: 10px;" (click)="downloadCV()"></button>
+                            </div>
+                            <div class="social-button-container">
+                                <button pButton pRipple type="input" icon="fa fa-facebook" class="p-button-rounded"
+                                    (click)="openFacebookSocial()" styleClass="p-button-lg">
+                                    <a href="https://www.facebook.com/profile.php?id=1395386950" rel="tooltip"
+                                        title="Follow me on Facebook"></a>
+                                </button>
+                                <button pButton pRipple type="input" icon="fa fa-github" class="p-button-rounded">
+                                    <a href="#" rel="tooltip" title="Find me on GitHub"></a>
+                                </button>
+                                <button pButton pRipple type="input" icon="fa fa-twitter" class="p-button-rounded">
+                                    <a href="#" rel="tooltip" title="Follow me on Twitter"></a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- about section -->
+        <div class="eo_parallax_group">
+            <div class="eo_parallax_layer  eo_parallax__layer--back">
+                <div id="profile-about-view-image"></div>
+            </div>
+            <div class="eo_parallax_layer  eo_parallax__layer--base">
+                <eo-about-section></eo-about-section>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+        <!-- skills section -->
+        <div class="eo_parallax_group">
+            <div class="eo_parallax_layer eo_parallax__layer--back">
+                <div id="profile-skills-view-image"></div>
+            </div>
+            <div class="eo_parallax_layer eo_parallax__layer--base">
+                <eo-skills-exp-section></eo-skills-exp-section>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+        <!-- portfolio section -->
+        <div class="eo_parallax_group">
+            <div class="eo_parallax_layer eo_parallax__layer--back">
+                <div id="portfolio-skills-view-image"></div>
+            </div>
+            <div class="eo_parallax_layer eo_parallax__layer--base">
+                <eo-projects></eo-projects>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>
+<!--profile page content component -->

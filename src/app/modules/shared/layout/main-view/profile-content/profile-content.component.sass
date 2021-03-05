@@ -1,0 +1,193 @@
+@import 'src/styles.sass'
+
+// main view title
+@media screen and (min-width: 544px)
+.main-view-title
+    position: fixed
+    display: flex
+    flex-direction: column
+    justify-content: center
+    top: calc(100% - 280px)
+    right: 0
+    left: 0
+    flex-wrap: wrap
+    align-content: center
+    font-size: 200%
+    min-height: calc(100% - 30.5%)
+    min-width: calc(100% - 30.5%)
+
+// main view content
+@media (min-width: 770px)
+.main-view-content
+    position: absolute
+    top: 240px
+    left: 50%
+    bottom: 0
+    -webkit-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
+    text-align: center
+    padding: 0 15px
+    min-width: calc(100% - 200px)
+    color: #e6e9fdfa
+    font-family: "Oswald-Regular"
+
+// main button container
+@media (min-width: 736px)
+.main-button-container
+    display: inline-block !important
+    justify-content: center !important
+    height: 50%
+
+// action button container
+@media (min-width: 928px)
+.action-button-container
+    text-align: center
+    right: 0
+    left: 0
+    margin-top: 47.5%
+
+// social button container
+@media (min-width: 928px)
+.social-button-container
+    display: flex
+    justify-content: center
+    margin-top: 8px
+    right: 0
+    left: 0
+
+// profile view image
+@media (min-width: 770px)
+.profile-view-image
+    display: inline-flex
+    position: absolute
+    width: 100%
+    height: 580px
+    z-index: -1
+    background-attachment: fixed
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    background-image: url('/assets/images/new-page-bg4.jpg')
+
+//profile-header
+.profile-header
+    height: 580px
+    width: 100%
+    padding: 0
+    color: #FFFFFF
+    position: fixed
+    background-position: center center
+    background-size: cover
+    background: linear-gradient(0deg, #4f5aa091, rgba(41, 52, 76, 0.36))
+    border-bottom: 3px inset #595cab
+
+// personal profile image & styling
+@-webkit-keyframes pulsate
+  0%
+    -webkit-transform: scale(0.6, 0.6)
+    transform: scale(0.6, 0.6)
+    opacity: 0.0
+
+  50%
+    opacity: 1.0
+
+  100%
+    -webkit-transform: scale(1, 1)
+    transform: scale(1, 1)
+    opacity: 0.0
+
+@keyframes pulsate
+    0%
+        -webkit-transform: scale(0.6, 0.6)
+        transform: scale(0.6, 0.6)
+        opacity: 0.0
+
+    50%
+        opacity: 1.0
+
+    100%
+        -webkit-transform: scale(1, 1)
+        transform: scale(1, 1)
+        opacity: 0.0
+
+@media (max-width: 770px)
+.eo-profile-image a
+    position: relative
+    bottom: 55.5px
+    &:before
+        content: ""
+        border: 15px solid #4d589d
+        border-radius: 50%
+        height: 165px
+        width: 165px
+        position: absolute
+        animation: pulsate 1.6s ease-out
+        animation-iteration-count: infinite
+        opacity: 0
+        z-index: 99
+
+.eo-profile-image img
+    position: relative
+    border-radius: 50%
+    padding: 0
+    margin: 0
+    border: 20px solid transparent
+    z-index: 9999
+    -webkit-transition: all .3s ease-out
+    transition: all .3s ease-out
+
+.eo-profile-image a:hover img
+    -webkit-transform: scale(1.06, 1.06)
+    transform: scale(1.06, 1.06)
+
+.eo-profile-image a:hover:before
+    -webkit-animation: none
+    animation: none
+
+.progress-spinner
+    position: fixed
+    z-index: 999
+    height: 2em
+    width: 2em
+    overflow: show
+    margin: auto
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+
+#profile-about-view-image
+    display: flex
+    position: fixed
+    width: 100%
+    height: 580px
+    z-index: -1
+    background-attachment: fixed
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    background-image: url('/assets/images/profilebg2.jpg')
+
+#profile-skills-view-image
+    display: flex
+    position: fixed
+    width: 100%
+    height: 580px
+    z-index: -1
+    background-attachment: fixed
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    background-image: url('/assets/images/profileskillsview.jpg')
+
+#portfolio-skills-view-image
+    display: flex
+    position: fixed
+    width: 100%
+    height: 580px
+    z-index: -1
+    background-attachment: fixed
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    background-image: url('/assets/images/profileskillsview.jpg')

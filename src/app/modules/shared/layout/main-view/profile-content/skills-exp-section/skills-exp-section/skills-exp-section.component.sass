@@ -1,0 +1,74 @@
+@import 'src/styles.sass'
+.progress-container
+    position: relative
+
+    & + .progress-container,
+
+    & ~ .progress-container
+        margin-top: 15px
+
+    & .progress-badge
+        color: #888
+        font-size: 90%
+        font-weight: 700 !important
+
+    & .progress
+        height: 5px
+        border-radius: 0
+        -webkit-box-shadow: none
+        box-shadow: none
+        background: rgba(222, 222, 222, 0.8)
+        margin-top: 14px
+        animation: progress 1.5s ease-in-out forwards
+
+.progress-container .progress .progress-bar
+    -webkit-box-shadow: none
+    box-shadow: none
+
+.progress-container .progress .progress-value
+    position: absolute
+    top: 25%
+    right: 0
+    color: #5f609c
+    font-size: 1.5vh
+    font-weight: 700 !important
+
+.progress-container.progress-primary .progress
+    background: rgba(63, 81, 181, 0.4)
+
+    &-bar
+        background: #5f609c
+
+    &-value,
+
+    &-badge
+        color: #5f609c
+
+#skills-card
+    width: 545px
+    top: 100px
+
+#skills-section-header
+    min-height: 580px
+    position: fixed
+    color: #FFFFFF
+    position: fixed
+    background-position: center center
+    background-size: cover
+    background: linear-gradient(0deg, #4f5aa091, rgb(41 52 76 / 36%))
+    top: 0
+    left: 0
+    right: 0
+    bottom: 230px
+
+// // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px)
+
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px)
+
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px)
+
+// // Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px)

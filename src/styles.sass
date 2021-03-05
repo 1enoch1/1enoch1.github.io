@@ -1,0 +1,110 @@
+@import 'assets/fonts/font-file.scss'
+// @import "~bootstrap/dist/css/bootstrap.css"
+
+:root
+    --primary-color: #8581c7
+    --primary-text-color: #2d2d2d
+    --secondary-text-color: #fff
+    --primary-font: 'Oswald-Regular'
+    --secondary-font: 'Oswald-Stencil'
+    --tertiary-font: 'Oswald-Light'
+
+// font-weight
+$thin: 100
+$light: 300
+$regular: 400
+$bold: 700
+$black: 900
+
+// font size
+$font-xs: 1.5vh
+$font-sm: 2vh
+$primary-fs: 2.5vh
+$font-md: 3vh
+$font-lg: 4vh
+
+
+h3
+    margin: 0
+    padding: 0
+    text-align: center
+
+html, body
+    height: 100%
+
+.profile-icon
+    position: relative
+
+// body
+// @media only screen and (max-width: 600px) 
+@media (min-width: 400px)
+.body
+    margin: 0
+    padding: 0
+    background-color: var(--primary-color)
+    flex-direction: column
+    min-width: 640px
+    --webkit-font-smoothing: antialiased
+    font-family: 'oswald-regular'
+
+// page section
+.page-section
+    display: flex
+    flex-direction: column
+    justify-content: center
+    margin: 0 30px
+
+div.main-view-content
+    z-index: 1
+
+
+// cards
+.card
+    border: 0
+    border-radius: 0.1875rem
+    display: flex
+    flex-wrap: wrap
+    position: relative
+    overflow: hidden
+    // max-width: 1000px
+    box-shadow: 0 12px 28px 0 rgb(0 0 0 / 20%), 0 2px 4px 0 rgb(0 0 0 / 10%), inset 0 0 0 1px rgb(255 255 255 / 50%)
+    margin: 0 auto
+    padding: 0
+
+
+img
+    aspect-ratio: attr(width) / attr(height)
+.p
+    margin-bottom: 0.5rem !important
+
+.p-button
+    border-radius: 5%
+
+.eo_parallax
+    perspective-origin: 100%
+
+.eo_parallax_group
+    position: relative
+    height: 75vh
+    transform-style: preserve-3d
+    transform-origin: 100%
+    border-top: 3px outset #595cab
+
+.eo_parallax_layer
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+.eo_parallax__layer--base
+    transform: translateZ(0)
+
+.eo_parallax__layer--back
+    transform: translateZ(-1px)
+
+.eo_parallax__layer--deep
+    transform: translateZ(-2px) scale(3)
+
+@media (min-height: 578px)
+div.skills-section-header
+    padding-bottom: 10px
