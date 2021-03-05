@@ -6,56 +6,55 @@
 .gallery .eo-portfolio-image figure img
     position: relative
     display: block
-    max-width: 100%
+    width: 100%
     opacity: 1
+    height: auto
 
-.gallery .eo-porfolio-image figure figcaption
+.gallery .cc-porfolio-image figure figcaption
     position: absolute
     color: #fff
     -webkit-backface-visibility: hidden
     backface-visibility: hidden
 
-.gallery .eo-porfolio-image figure figcaption,
-.gallery .eo-porfolio-image figure figcaption > a
+.gallery .cc-porfolio-image figure figcaption,
+.gallery .cc-porfolio-image figure figcaption > a
     position: absolute
     top: 0
     left: 0
     width: 100%
     height: 100%
-.gallery .eo-porfolio-image figure figcaption > a
     z-index: 1000
     text-indent: 200%
     white-space: nowrap
     font-size: 0
     opacity: 0
 
-.gallery .eo-porfolio-image figure .h3,
-.gallery .eo-porfolio-image figure p
-    margin: 0
+    .gallery .cc-porfolio-image figure .h3,
+    .gallery .cc-porfolio-image figure p
+        margin: 0
 
 .gallery figure.cc-effect figcaption::before,
 .gallery figure.cc-effect figcaption::after
     position: absolute
     content: ''
     opacity: 0
-    // border-radius: 5%
+    border-radius: 5%
 
 .gallery figure.cc-effect figcaption::before
-    top: 10px
-    right: 10px
-    bottom: 10px
-    left: 10px
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
     -webkit-transform: scale(0, 0)
     transform: scale(0, 0)
     -webkit-transform-origin: 0 0
     transform-origin: 0 0
 
 .gallery figure.cc-effect figcaption::after
-    top: 5px
-    left: 5px
-    right: 5px
-    bottom: 5px
-    z-index: 1000
+    top: 10px
+    right: 10px
+    bottom: 10px
+    left: 10px
     -webkit-transform: scale(0, 0)
     transform: scale(0, 0)
     -webkit-transform-origin: 100% 0
@@ -72,20 +71,17 @@
 .gallery figure.cc-effect .h3
     font-size: 18px
     text-align: justify
+    // background: rgba(27, 23, 23, 0.5)
 
-.gallery figcaption
+.gallery figcaption .container
     position: absolute
-    // top: 0
-    // left: 0
-    // right: 0
-    // bottom: 0
-    padding: 0
-    max-width: 218px
-    height: 100%
+    // width: 100%
+    // bottom: 20px
+    // max-width: 200px
 
 .gallery figure.cc-effect p,
 .gallery figure.cc-effect button
-    // padding: 0 2px
+    padding: 0 2px
     text-transform: uppercase
     letter-spacing: 3px
     -webkit-transition: -webkit-transform 0.35s
@@ -135,55 +131,30 @@
 .gallery figure.cc-effect:hover img
     -webkit-transition-delay: 0.15s
     transition-delay: 0.15s
-    // background: rgba(27, 23, 23, 0.5)
+    //background: rgba(27, 23, 23, 0.5)
 
 .portfolio-image-size
     border-radius: 2%
-    // width: 100%
-    // height: 100%
+    width: 100%
+    height: 200px
+    max-height: 100%
+    overflow: hidden
 
 .gallery-caption-size
-    top: 0
-    left: 0
-    right: 0
-    bottom: 0
-    height: 50px
+    top: 10px
+    left: 10px
+    right: 10px
+    bottom: 10px
+    min-height: 90%
     border-radius: 2%
-    // z-index: 1000
-    max-width: 100px
-
-#portfolio-section-header
-    min-height: 580px
-    color: #FFFFFF
-    position: fixed
-    background-position: center center
-    background-size: cover
-    background: linear-gradient(0deg, #4f5aa091, rgba(41, 52, 76, 0.36))
-    top: 0
-    left: 0
-    right: 0
-    bottom: 220px
-
-@media screen and (min-width: 544px)
-#portfolio-section-header-title
-    position: relative
-    top: 0
-    right: 0
-    left: 0
-    bottom: 0
+    min-width: 94%
     margin: 0 auto
-    // flex-wrap: wrap
-    // align-content: center
-
-@media screen and (max-width: 600px)
-#project-gallery
-    position: relative
-    top: 120px
+    padding: 2px
+    word-break: break-word
+    // transform: translate(-50%, -50%)
 
 .gallery-image
     border-radius: 2%
-    padding: 0
-    // margin: 0 auto
 // .gallery-column
 //     flex: 25%
 //     max-width: 25%

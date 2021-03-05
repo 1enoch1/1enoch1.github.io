@@ -27,8 +27,6 @@
     "awesome-typescript-loader": "^5.2.1",
     "bootstrap": "^4.5.3",
     "font-awesome": "^4.7.0",
-    "imagemin": "^7.0.1",
-    "imagemin-webp": "^6.0.0",
     "jquery": "^3.5.1",
     "normalize.css": "^8.0.1",
     "primeicons": "^4.0.0",

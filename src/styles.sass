@@ -1,13 +1,13 @@
 @import 'assets/fonts/font-file.scss'
-// @import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css"
 
 :root
     --primary-color: #8581c7
     --primary-text-color: #2d2d2d
     --secondary-text-color: #fff
-    --primary-font: 'Oswald-Regular'
-    --secondary-font: 'Oswald-Stencil'
-    --tertiary-font: 'Oswald-Light'
+    --primary-font: 'oswald-regular'
+    --secondary-font: 'oswald-bold'
+    --tertiary-font: 'oswald-light'
 
 // font-weight
 $thin: 100
@@ -23,40 +23,36 @@ $primary-fs: 2.5vh
 $font-md: 3vh
 $font-lg: 4vh
 
+// container
+.container
+    margin-right: auto
+    margin-left: auto
+    // padding-right: 15px
+    // padding-left: 15px
+    width: 100%
 
-h3
+.h4
     margin: 0
     padding: 0
     text-align: center
-
-html, body
-    height: 100%
-
-.profile-icon
-    position: relative
-
 // body
-// @media only screen and (max-width: 600px) 
-@media (min-width: 400px)
 .body
     margin: 0
     padding: 0
     background-color: var(--primary-color)
     flex-direction: column
     min-width: 640px
+    margin: 0 auto
     --webkit-font-smoothing: antialiased
-    font-family: 'oswald-regular'
+    font-family: "Oswald-Regular"
 
 // page section
 .page-section
-    display: flex
+    display: flex !important
     flex-direction: column
     justify-content: center
-    margin: 0 30px
-
-div.main-view-content
-    z-index: 1
-
+    flex-grow: 1 !important
+    margin: 0 50px
 
 // cards
 .card
@@ -71,9 +67,19 @@ div.main-view-content
     margin: 0 auto
     padding: 0
 
+.section-header
+    font-family: "Oswald-Regular"
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    position: relative
+    color: var(--secondary-text-color)
 
 img
-    aspect-ratio: attr(width) / attr(height)
+    max-width: 100%
+    min-height: 100%
+    width: auto
+    height: auto
 .p
     margin-bottom: 0.5rem !important
 
@@ -83,12 +89,13 @@ img
 .eo_parallax
     perspective-origin: 100%
 
+@media screen and (min-height: 770px)
 .eo_parallax_group
     position: relative
-    height: 75vh
+    height: 79.5vh
     transform-style: preserve-3d
     transform-origin: 100%
-    border-top: 3px outset #595cab
+    // border-top: 3px inset #595cab
 
 .eo_parallax_layer
     position: absolute
@@ -101,10 +108,7 @@ img
 
 .eo_parallax__layer--back
     transform: translateZ(-1px)
+    border-bottom: 3px inset #595cab
 
 .eo_parallax__layer--deep
     transform: translateZ(-2px) scale(3)
-
-@media (min-height: 578px)
-div.skills-section-header
-    padding-bottom: 10px

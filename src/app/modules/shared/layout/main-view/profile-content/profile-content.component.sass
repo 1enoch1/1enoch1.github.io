@@ -1,5 +1,9 @@
 @import 'src/styles.sass'
 
+//wrapper
+.content-wrapper
+    position: relative
+
 // main view title
 @media screen and (min-width: 544px)
 .main-view-title
@@ -7,7 +11,7 @@
     display: flex
     flex-direction: column
     justify-content: center
-    top: calc(100% - 280px)
+    top: calc(100% - 70.5%)
     right: 0
     left: 0
     flex-wrap: wrap
@@ -17,29 +21,30 @@
     min-width: calc(100% - 30.5%)
 
 // main view content
-@media (min-width: 770px)
+@media screen and (min-width: 770px)
 .main-view-content
     position: absolute
-    top: 240px
+    top: 45%
     left: 50%
     bottom: 0
     -webkit-transform: translate(-50%, -50%)
     transform: translate(-50%, -50%)
     text-align: center
     padding: 0 15px
-    min-width: calc(100% - 200px)
+    min-width: calc( 100% - 10.5% )
     color: #e6e9fdfa
     font-family: "Oswald-Regular"
+    float: none
 
 // main button container
-@media (min-width: 736px)
+@media screen and (min-width: 736px)
 .main-button-container
     display: inline-block !important
     justify-content: center !important
     height: 50%
 
 // action button container
-@media (min-width: 928px)
+@media screen and (min-width: 928px)
 .action-button-container
     text-align: center
     right: 0
@@ -47,7 +52,7 @@
     margin-top: 47.5%
 
 // social button container
-@media (min-width: 928px)
+@media screen and (min-width: 928px)
 .social-button-container
     display: flex
     justify-content: center
@@ -56,12 +61,12 @@
     left: 0
 
 // profile view image
-@media (min-width: 770px)
+@media screen and (min-width: 770px)
 .profile-view-image
     display: inline-flex
     position: absolute
     width: 100%
-    height: 580px
+    min-height: 545px
     z-index: -1
     background-attachment: fixed
     background-position: center center
@@ -71,11 +76,11 @@
 
 //profile-header
 .profile-header
-    height: 580px
-    width: 100%
+    min-height: 545px
+    min-width: 580px
     padding: 0
     color: #FFFFFF
-    position: fixed
+    position: relative
     background-position: center center
     background-size: cover
     background: linear-gradient(0deg, #4f5aa091, rgba(41, 52, 76, 0.36))
@@ -110,7 +115,7 @@
         transform: scale(1, 1)
         opacity: 0.0
 
-@media (max-width: 770px)
+@media screen and (min-width: 770px)
 .eo-profile-image a
     position: relative
     bottom: 55.5px
@@ -121,6 +126,7 @@
         height: 165px
         width: 165px
         position: absolute
+        left: 0
         animation: pulsate 1.6s ease-out
         animation-iteration-count: infinite
         opacity: 0
@@ -129,6 +135,8 @@
 .eo-profile-image img
     position: relative
     border-radius: 50%
+    height: 165px
+    width: 165px
     padding: 0
     margin: 0
     border: 20px solid transparent
@@ -156,11 +164,21 @@
     bottom: 0
     right: 0
 
-#profile-about-view-image
-    display: flex
-    position: fixed
+.page-section-header
+    min-height: 545px
+    min-width: 580px
+    padding: 0
+    color: #FFFFFF
+    position: relative
+    background-position: center center
+    background-size: cover
+    background: linear-gradient(0deg, #4f5aa091, rgb(41 52 76 / 36%))
+
+#profile-second-view-image
+    display: inline-flex
+    position: absolute
     width: 100%
-    height: 580px
+    min-height: 545px
     z-index: -1
     background-attachment: fixed
     background-position: center center
@@ -168,11 +186,15 @@
     background-size: cover
     background-image: url('/assets/images/profilebg2.jpg')
 
+#skills-section-header
+    position: relative
+    bottom: 150px
+
 #profile-skills-view-image
-    display: flex
-    position: fixed
+    display: inline-flex
+    position: absolute
     width: 100%
-    height: 580px
+    min-height: 545px
     z-index: -1
     background-attachment: fixed
     background-position: center center
@@ -180,14 +202,8 @@
     background-size: cover
     background-image: url('/assets/images/profileskillsview.jpg')
 
-#portfolio-skills-view-image
-    display: flex
-    position: fixed
-    width: 100%
-    height: 580px
-    z-index: -1
-    background-attachment: fixed
-    background-position: center center
-    background-repeat: no-repeat
-    background-size: cover
-    background-image: url('/assets/images/profileskillsview.jpg')
+#second-parallax-size
+    height: 549px
+
+#about-section-header
+    position: relative
